@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <title>Chen Yan Xing Personal Imformation</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Roy Zhan Private HTML Website</title>
     </head>
     <body>
         <nav>
+            <header> HTML Home</header>
             <div class="container">
                 <div class="box form-box">
                     <div class="menu">
-                        <ul></ul>
+                        <ul>
+                            <a href="index.html" class="link">Home</a>
+                            <a href="Matrix Rain/index.html" class="link">Matrix Rain</a>
+                            <a href="cyx/index.html" class="link">Chen Yan Xing</a>
+                            <a href="System Maintenance/System Maintenance.html" class="link">System Maintenance</a>
+                            <a href="Music-Player/index.html" class="link">Music Player</a>
+                            <a href="File-Upload-and-Share-System/index.html" class="link">File Upload and Share System</a>
+                            <a href="https://github.com/dashboard" class="link" target="_blank">Roy Zhan's Personal Github Dashboard</a>
+                            <a href="https://royzhan1107.github.io/HTML/en-us/index.html" class="link">Roy Zhan's Personal HTML Website</a>
+                        </ul>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="content">
-            <ul>
-                <li>Name: Chen Yan Xing</li>
-                <li>Birthday: 2007-03-14</li>
-                <li>Nickname: A Xing</li>
-                <li>Favority Food: chocolate, strawberry</li>
-                <li>Hobby: play zenless zone zero video game</li>
-                <li>Restirect Food: peanut, horse bean, mint, alcohol, spicy, beef, process food</li>
-                <li>Catchphrase: "Fuck up your mom!", "What the fuck?", "Fuck!", "Get out of there!", </li>
-            </ul>
-            
-            <!-- <img src="img/20251027_140914.jpg" alt="" height="400px" width="335px">
-            <img src="img/20251102_215951.jpg" alt="" height="400px" width="335px"> -->
-            
+        <div class="right-menu">
+            <a href="#" class="link" onclick="setting(event)">Setting</a>
         </div>
-        <footer>
-            &copy; Writer: Roy Zeng
+        <div class="setting" id="setting">
+            <span>Setting</span>
+            <ul>
+                <li><a href="#" class="link" onclick="setbg(event)">Change Background</a></li>
+                <li><a href="#" class="link" onclick="about(event)">About</a></li>
+            </ul>
+        </div>
+        <div class="window resizable" id="change-bg" style="display: none;">
+            <div class="bg-header" id="bg-header">
+                    <span class="bg-title">Change Background</span>
+                    <div class="bg-ctrl">
+                        <button class="btn" id="btn" onclick="maxwindow('change-bg')">🗖</button>
+                        <button id="btn" class="btn" onclick="closewindow('change-bg')">✖</button>
+                    </div>
+                </div>
+                    <div class="bg-body">
+                        <ul>
+                            <img src="image/110335.jpg" alt="" onclick="changebg('110335.jpg')" height="300px" width="250px">
+                            <img src="image/1759637202844.jpg" alt="" onclick="changebg('1759637202844.jpg')" height="300px" width="250px">
+                            <img src="image/20251005_172431.jpg" alt="" onclick="changebg('20251005_172431.jpg')" height="300px" width="250px">
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <ul>
+                <span>About</span>
+                <li>
+                    version: 2.0
+                    <a href="index v1.txt" class="link" style="color: #000;" download="">index V1</a>
+                    <a href="style v1.txt" class="link" style="color: #000;" download="">style V1</a>
+                    <a href="index v2.txt" class="link" style="color: #000;" download="">index V2</a>
+                    <a href="style v2.txt" class="link" style="color: #000;" download="">style V2</a>
+                </li>
+            </ul>
+        </div>
+            <footer>&copy;Writer: Roy Zhan
         </footer>
         <script src="script.js"></script>
     </body>
