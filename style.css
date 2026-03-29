@@ -63,12 +63,13 @@ ul{
     justify-content: center;
     display: flex;
     top: 3rem;
-    z-index: 1;
 }
 .setting{
     position: absolute;
     right: 0;
     display: none;
+    z-index: 1;
+    top: 0.5%;
 }
 .about span{
     font-size: 24px;
